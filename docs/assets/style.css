@@ -1,7 +1,51 @@
+#images {
+  padding-top: 15px;
+  text-align: center;}
 
-#mainNav{
-    padding:10px; 
-    color: rgb(170, 188, 221);
-    font-weight: bold; 
-    border-radius:15px
+  .imageNav-photo {
+    width: 170px;
+    height: 170px;}
+
+
+  #description-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    }
+
+    .graphdesc {
+    text-align: center;  
+    }
+    
+    .desctitle {
+      text-align: center;
+    }
+
+    .comptitle {
+      text-align: center;
+    }
+
+    html{
+      background-color: beige;
+    }
+
+    body {
+      background-color: beige;
+    }
+.dropback{
+  background-color: cadetblue;
+}
+
+#logo {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }

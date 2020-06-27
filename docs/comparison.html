@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Comparison</title>
+
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="assets/style.css" media="screen">
+
+  </head>
+
+  <body>
+   
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        
+        <div class="row dropback">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+            </div>
+          </div>
+
+          
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots 
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="viz1.html">Max Temperature</a></li>
+                  <li><a href="viz2.html">Humidity</a></li>
+                  <li><a href="viz3.html">Cloudiness</a></li>
+                  <li><a href="viz4.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class= "container col-md-12">
+      <div class = "row">
+        <section>
+        <h2 class="desctitle">Comparisons: Latitude vs X</h2>
+        <hr />
+        <h5>Check out the graphs below and click on one for deeper analysis.</h5>
+        </div>
+        <div id="compimages">
+        <div class="col-md-6">
+          <h2 class="comptitle">vs Max Temperature</h2>
+          <a href="viz1.html"><img src="graphs/maxtemp.png" alt="Latitude vs. Max Temperature" class="compimage"></a>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="comptitle">vs Humidity</h2>
+          <a href="viz2.html"><img src="graphs/humidity.png" alt="Latitude vs. Humidity" class="compimage"></a>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="comptitle">vs Cloudiness</h2>
+          <a href="viz3.html"><img src="graphs/cloudiness.png" alt="Latitude vs. Cloudiness" class="compimage"></a>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="comptitle">vs Wind Speed</h2>
+          <a href="viz4.html"><img src="graphs/windspeed.png" alt="Latitude vs. Wind Speed" class="compimage"></a>
+        </div>
+      </section>
+        </div>
+      </div>
+ 
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

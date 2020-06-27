@@ -1,50 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></linik>
-    <link rel="stylesheet"  href="assets/style.css" media="screen">
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Navigation --> 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <div class="container-fluid navbar-custom">
-          <div class="row">
-            <div class= "navbar-header">
-          <a class="navbar-brand" href="index.html">Latitude</a>
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggle-icon"></span>
-          </button>
-        </div>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
+    <title>Bootstrap Visualization Dashboard</title>
+
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="assets/style.css" media="screen">
+
+  </head>
+
+  <body>
+   
+    <nav class="nav navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        
+        <div class="row dropback">
+          <div class="nav navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+            </div>
+          </div>
+
+          
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
-             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots 
+                <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a class= "dropdown-item" href="viz1.html">rename!!!!</a></li>
-                  <li><a class= "dropdown-item" href="viz2.html">rename!!!!</a></li>
-                  <li><a class= "dropdown-item" href="viz3.html">rename!!!!</a></li>
-                  <li><a class= "dropdown-item" href="viz4.html">rename!!!!</a></li>
-              </ul>
-            </li>
+                 <li><a href="viz1.html">Max Temperature</a></li>
+                  <li><a href="viz2.html">Humidity</a></li>
+                  <li><a href="viz3.html">Cloudiness</a></li>
+                  <li><a href="viz4.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
             </ul>
           </div>
-       </div> 
+        </div>
       </div>
     </nav>
+   
+    <div class= "container col-md-12">
+      <section class= "row">
+        <div class="col-md-6">
+          <div class = "desc">
+            <h2 class= "desctitle">Summary: Latitude vs X</h2>
+            <img src="graphs/maxtemp.png" alt="temp" id="description-image"/>
+            <p>The purpose of this project was to visualize how different meteorological events are associated with proximity to the equator.</p>
+            <p>This project utilizes data compiled in a prior project using the OpenWeatherAPI to pull data relating to temperature, humidity, cloudiness, and windspeed for at least 500 cities per pull. We then graphed the data using matplotlib. </p>
+            <p>This site is a tool to move through the compiled data, including raw data and graphs of meteorological event vs latitude</p>          
+        </div>
+      </div>
+
+        <div class="col-md-4">
+
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="desctitle">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="viz1.html"><img src="graphs/maxtemp.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                <a href="viz2.html"><img src="graphs/humidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="viz3.html"><img src="graphs/cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="viz4.html"><img src="graphs/windspeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+      </section>
+    </div>
 
 
-</body>
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
 
 </html>
