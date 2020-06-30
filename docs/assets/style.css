@@ -33,6 +33,7 @@
 
     body {
       background-color: beige;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
     }
 .dropback{
   background-color: cadetblue;
@@ -46,6 +47,11 @@
   color: white;
 }
 
-body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+.desc {
+  background-color: white;
+  min-height: 500px;
+}
+
+.imageNav-content {
+  background-color: white;
 }
